@@ -27,3 +27,11 @@ In order to do this, just run the following command when the Octoprint server st
 python3 /usr/bin/python-socket2serial.py -u <printer_ip_address> 3000
 ```
 
+In Octoprint settings you then need to add the following ports to the `Additional serial ports` field:
+```
+/dev/pts/2
+/dev/pts/3
+/dev/pts/4
+/dev/pts/5
+```
+Usually it's `/dev/pts/2`, but it may vary depending on which port is already in use.
